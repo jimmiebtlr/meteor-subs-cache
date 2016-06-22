@@ -2,7 +2,7 @@ Package.describe({
   name: 'jimmiebtlr:subs-cache',
   summary: 'A package for caching Meteor subscriptions.',
   version: '0.1.0',
-  git: 'https://github.com/ccorcos/meteor-subs-cache'
+  git: 'https://github.com/jimmiebtlr/meteor-subs-cache'
 });
 
 Package.onUse(function(api) {
