@@ -1,23 +1,20 @@
 Package.describe({
   name: 'jimmiebtlr:subs-cache',
   summary: 'A package for caching Meteor subscriptions.',
-  version: '0.1.0',
+  version: '0.2.0',
   git: 'https://github.com/jimmiebtlr/meteor-subs-cache'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1');
+  api.versionsFrom('METEOR@1.3.1');
 
   api.use([
-    'coffeescript',
+    'ecmascript',
     'underscore',
     'ejson',
     'tracker',
     'reactive-var'
   ], ['client', 'server']);
 
-  api.addFiles([
-    'src/subsCache.coffee',
-  ], ['client', 'server']);
-
+  api.mainModule('subsCache.js');
 });
